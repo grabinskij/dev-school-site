@@ -1,0 +1,762 @@
+@import"vars";
+@import"libs";
+@import"fonts";
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+input {
+    outline:none;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5e5d5d;
+}
+
+
+
+
+
+
+
+
+//header
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100vw;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.2);
+}
+.header__menu{
+    height: 100px;
+    align-items: center;
+}
+.header__content-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+.header__menu-items li{
+    display: inline-block;
+    margin-top: 5px;
+}
+.header__menu-items a{
+     padding: 38px 20px;
+     color: #666666;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.header__menu-items a:hover{
+    background-color: #eeeeee;
+    transition: all 0.4s ease;
+}
+.header__menu-items .form__btn{
+    color: #fff;
+    background-color: $blue;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+}
+.header__menu-items .form__btn:hover{
+    background-color: #245682;
+    transition: all 0.4s ease;
+}
+.header__btn-menu{
+    display: none;
+    cursor: pointer;
+    background-color: $blue;
+    padding: 4px 11px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+  .burger{          //Бургер-меню
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Секція про курси і форма
+.main{
+    min-height: 660px;
+    background-color: #f3eeee;
+}
+.main__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-bottom: 14px;
+}
+.main__title{
+    color: $grey;
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.1;
+    width: 100%;
+}
+.main__text{
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 500px !important;
+    width: 100%;
+    margin: 0 auto !important;
+    text-align: center;
+}
+.main__inner-item{
+    margin-top: 189px;
+    max-width: 550px;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+//Форма
+.main__form{
+    display: inline-block;
+    color: #666666;
+    max-width: 590px;
+    position: relative;
+    width: 100%;
+    min-height: 580px;
+    padding: 58px 0 0;
+}
+.main__form p{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 22px;
+    color: $grey;
+    font-weight: 600;
+}
+.main__form input[type="submit"]{
+    position: relative;
+    background-color: $blue;
+    color: #fff;
+    margin: 0 auto;
+    padding: 18px 95px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+input#sub_f{
+    display: flex;
+    justify-content: center;
+}
+.main__form input[type="submit"]:hover{
+    background-color: #255f92;
+    transition: all 0.4s ease;
+}
+.main__form input[type="text"], 
+.main__form input[type="tel"],
+.main__form input[type="email"],
+label{
+    display:block;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 35px;
+    max-width: 590px;
+    height: 50px;
+    padding: 0 10px;
+}
+.main__form input[type="text"], 
+.main__form input[type="tel"],
+.main__form input[type="email"]{
+    border-radius: 5px;
+    border: 1px solid #bababa;
+}
+.main__form input{
+    max-width: 590px;
+    margin-top: 2px;
+}
+.main__form input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: 0 1px 6px -1px #66afe9;
+    }
+#file_f label:nth-child(2),
+#file_f label:nth-child(3),
+#file_f label:nth-child(4),
+#file_f label:nth-child(5),
+#file_f label:nth-child(6){
+    font-weight: 600;
+}
+#file_f label:nth-child(2)::after,
+#file_f label:nth-child(3)::after,
+#file_f label:nth-child(4)::after,
+#file_f label:nth-child(5)::after,
+#file_f label:nth-child(6)::after,
+#file_f label:nth-child(7)::after{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 8px;
+    font-weight: 500;
+    background-image: url(../img/required.png);
+    background-size: 8px 7px;
+    display: inline-block;
+    line-height: 1;
+    height: 7px;
+    width: 10px;
+}
+#file_f label:nth-child(2)::after{
+    content: "";
+    margin-top: -101px;
+    margin-left: 29px;
+}
+#file_f label:nth-child(3)::after{
+    content: "";
+    margin-top: -101px;
+    margin-left: 71px;
+}
+#file_f label:nth-child(4)::after{
+    content: "";
+    margin-top: -101px;
+    margin-left: 160px;
+}
+#file_f label:nth-child(5)::after{
+    content: "";
+    margin-top: -100px;
+    margin-left: 121px;
+}
+#file_f label:nth-child(6)::after{
+    content: "";
+    margin-top: -102px;
+    margin-left: 40px;
+}
+#file_f label:nth-child(7){
+    margin-top: 43px;
+    margin-bottom: -15px;
+}
+#file_f label:nth-child(7)::after{
+    content: "";
+    margin-top: 7px;
+    margin-left: 3px;
+}
+input#check_f.in_pl{
+    position: relative;
+    margin: -1px 5px 3px 0;
+}
+.checklink {
+    color: #286090;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Секція: слайдер про курси
+.course__inner-title{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    color: $grey;
+    margin-top: 75px;
+}
+.course__slider{
+    margin-top: 45px;
+    width: auto;
+}
+.course__inner-item{
+    text-align: center;
+}
+.course__title{
+    display: inline-block;
+    margin: 20px 0 0;
+    padding: 0 0 20px;
+    font-size: 24px;
+    color: #666666;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #3498db;
+}
+.course__text{
+    color: #888888;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 30px;
+    font-weight: 300;
+    padding: 0 30px 30px 30px;
+}
+.course__img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+//Секція: статистика курсів
+
+.statistic{
+    background-color: #3498db;
+}
+.statistic__items{
+    display: flex;
+    justify-content: space-between;
+    min-height: 310px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    padding: 80px 0;
+    margin-top: 90px;
+}
+.statistic__item{
+    width: 305px;
+}
+.statistic__number{
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+//Секція: слайдер з відгуками про курси
+
+.responses{
+    height: 530px;
+    height: 100%;
+    margin-bottom: 70px;
+}
+.responses__inner-content{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.responses__title{
+    text-align: center;
+    font-size: 34px;
+    color: $grey;
+    padding-top: 75px;
+    margin-bottom: 15px;
+}
+.responses__text{
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    width: 945px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.7;
+    width: 100%;
+    margin: 0 auto;
+}
+.responses__text::before{
+    content: "\f10d";
+    position: absolute;
+    left: -12px;
+    top: 0;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;  
+    color: #c4c4c4;  
+    font-size: 28px;
+}
+.responses__text::after{
+    content: "\f10e";
+    position: absolute;
+    right: -18px;
+    bottom: 20px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    color: #c4c4c4;  
+    font-size: 28px;
+}
+.icofont-right{
+    position: absolute;
+    bottom: 15px;
+    right: -35px;
+    opacity: 0.5;
+    font-size: 28px;
+    color: #888888;
+}
+.responses__author{
+    font-size: 20px;
+    color: $grey;
+}
+.responses__profession{
+    padding-top: 5px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+// Дотси для слайдерів
+
+ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    .slick-active{
+        button{
+            background-color: $grey;
+            border: none;
+            outline: none !important;
+            cursor: pointer;
+        }
+    }
+    button{
+        background-color: #888888;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+      .button:active{
+            outline:none;
+            border: none;
+        }
+}
+button#slick-slide-control00,
+button#slick-slide-control01,
+button#slick-slide-control02,
+button#slick-slide-control10,
+button#slick-slide-control11,
+button#slick-slide-control12{
+    outline: transparent;
+}
+
+
+
+
+
+
+
+
+// Секція: відео про курси
+
+.video{
+    background-color: #f7f7f7;
+     padding-bottom: 65px;
+     min-height: 100%;
+     width: 100%;
+     position: relative;
+}
+.video__inner{
+    height: 870px;
+    height: auto;
+}
+.video__text{
+    position: relative;
+    min-height: 166px;
+    height: auto;
+}
+
+.video__title{
+    padding-top: 75px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    color: $grey;
+    margin-bottom: 30px;
+}
+.lorem{
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #888888;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.video__content{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: -148px;
+}
+.video__content iframe{
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    padding: 148px 85px 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+// Секція: ментори курсів(слайдер)
+.mentors{
+    min-height: 620px;
+    margin-bottom: -25px;
+    padding-bottom: 80px;
+}
+.mentors__slider-content{
+    display: flex;
+    justify-content: space-between;
+}
+.mentors__title{
+    font-weight: 500;
+    font-size: 34px;
+    padding-top: 70px;
+    text-align: center;
+    color: $grey;
+    margin: 0 auto 10px;
+}
+.mentors__image{
+    display: inline-block;
+    width: 55%;
+    position: relative;
+    left: 60px;
+    margin-top: 15px;
+    padding-right: 30px;
+}
+.mentors__image img{
+    max-width: 100%;
+    height: auto;
+}
+.mentors__right{
+    flex-grow: 1;
+    margin-top: 40px;
+   margin-left: 118px;
+   width: 100%;
+}
+.mentors__name{
+    position: relative;
+    left: 0;
+    padding: 0 0 15px;
+    color: #3498db;
+    font-size: 20px;
+    font-weight: 800;
+}
+.mentors__text{
+    color: #888888;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-top: 25px;
+    border-top: 1px solid #f7f7f7;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+
+
+
+
+
+
+
+// Секція: мапа(Goole)
+
+.map__inner{
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+// Футер
+
+.footer{
+    min-width: 100%;
+    background-color: #3498db;
+    margin-top: -5px;
+}
+.footer__inner-contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+    color: #fff;
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.footer__item-icon{
+    font-size: 48px;
+    padding: 0 0 25px 0;
+}
+.footer__item-icon-tel{
+    font-size: 48px;
+    padding: 0 0 25px 0;
+    transform: scaleX(-1);
+}
+.footer__item{
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+.footer__item-title{
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.footer__item-info{
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer__item-info a{
+    cursor: pointer;
+    color: #fff;
+}
+.footer__item-info a::after{
+    content: '';
+    position: relative;
+    margin-top: -4px;
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid transparent;  
+}
+.footer__item-info a:hover::after{
+    border-bottom: 1px solid #fff; 
+}
+
+
+
+
+
+
+
+// Футер: копірайт
+
+.footer__copyright{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer__copyright span{
+    color: #3498db;
+    line-height: 2.3;
+}
+.footer__copyright a{
+    cursor: pointer;
+    color: #666666;
+    line-height: 2.3;
+}
+.footer__copyright a::after{
+    content: '';
+    position: relative;
+    margin-top: -9px;
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid transparent;  
+}
+
+.footer__copyright a:hover::after{
+    border-bottom: 1px solid #666666;  
+}
+
+
+@import"media";

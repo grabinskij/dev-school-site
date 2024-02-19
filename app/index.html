@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="header__menu-items">
+                        <div class="header__btn-menu">
+                            <div class="burger"></div>
+                            <div class="burger"></div>
+                            <div class="burger"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#head">Home</a></li>
+                            <li><a href="#program">Course program</a></li>
+                            <li><a href="#feedback">Feedback</a></li>
+                            <li><a href="#youtube">Video</a></li>
+                            <li><a href="#mentor">Mentors</a></li>
+                            <li><a class="form__btn" href="#head">
+                                Apply</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="head" class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__inner-item">
+                    <div class="main__title">
+                        Programming courses
+                    </div>
+                    <div class="main__text">
+                        The IT industry is evolving at a remarkable pace, 
+                        and there is a growing trend towards seeking education in this field. 
+                        However, a notable challenge is the scarcity of genuinely qualified professionals. 
+                        Traditional university education often falls short in providing ample practical 
+                        exposure and real-world case studies. An innovative teaching methodology has been 
+                        developed to swiftly equip individuals with the necessary knowledge to become proficient IT specialists. 
+                        Explore our programming courses starting on August 3rd and embark on your journey to IT expertise. 
+                        Join us for a dynamic learning experience!
+                    </div>
+                </div>
+                <div class="main__form">
+                    <div id="success-message" style="display: none; color: green" class="alert alert-success" role="alert">
+                        Form submitted successfully!
+                    </div>
+                    <form id="file_f" action="">
+                        <p>Register now</p>
+                        <label>Name<input type="text" name="name_f" id="name_f" autocomplete="off" class="in_pl"
+                                placeholder="Name" required></label>
+                        <label>Surname<input type="text" name="surname_f" id="surname_f" autocomplete="off"
+                                class="in_pl" placeholder="Surname" required></label>
+                        <label>I am interested in<input type="text" name="interest_f" id="interest_f"
+                                autocomplete="off" class="in_pl" placeholder="developer or QA" required></label>
+                        <label>Phone number<input type="tel" pattern="^\+49\s\d{3}\s\d{2}\s\d{2}\s\d{3}$" name="tel_f"
+                                id="tel_f" autocomplete="off" class="in_pl"
+                                placeholder="Phone number: +49 XXX XX XX XXX" required></label>
+                        <label>Email<input type="email" name="contact_f" id="contact_f" autocomplete="off" class="in_pl"
+                                placeholder="Email" required></label>
+                        <label><input type="checkbox" name="check_f" id="check_f" autocomplete="off" class="in_pl"
+                                placeholder=" " required><span class="politic">I agree with <a class="checklink"
+                                    href="#" title="confidentiality terms">Privacy</span>
+                            <span class="confidential">&thinsp;policy</span></span></a>
+                        </label>
+                        <input type="submit" value="REGISTER NOW" name="submit" id="sub_f"
+                            onclick="frmotpr();" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="program" class="course">
+        <div class="container">
+            <div class="course__inner">
+                <div class="course__inner-title">
+                    Web Development
+                </div>
+                <div class="course__slider">
+                    <div class="course__inner-content">
+                        <div class="course__inner-item">
+                            <div class="course__img">
+                                <img src="img/course-icon-1.png" width="85" height="85" alt="">
+                            </div>
+                            <div class="course__title">
+                                Development on WordPress
+                            </div>
+                            <div class="course__text">
+                               The course consists of brief instructional videos where you'll grasp the fundamentals of WordPress. 
+                               You'll learn how to create websites of varying complexity, from blogs to online stores. 
+                               Solidify your understanding through practical exercises and test assignments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__inner-content">
+                        <div class="course__inner-item">
+                            <div class="course__img">
+                                <img src="img/course-icon-2.png" width="85" height="85" alt="">
+                            </div>
+                            <div class="course__title">
+                                Development on Drupal
+                            </div>
+                            <div class="course__text">
+                                Unlock the secrets of core and additional Drupal modules (such as Views, Rules, Panels, Devel,
+                                Paragraph, and more) as you construct impressive websites on Drupal 8, brick by brick.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__inner-content">
+                        <div class="course__inner-item">
+                            <div class="course__img">
+                                <img src="img/course-icon-3.png" width="85" height="85" alt="">
+                            </div>
+                            <div class="course__title">
+                                Testing automation
+                            </div>
+                            <div class="course__text">
+                                Discover insights into quality assurance across diverse software development models. 
+                                A QA specialist will also delve into various testing types such as functional, regression, 
+                                system, and performance testing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="statistic">
+        <div class="container">
+            <div class="statistic__items">
+                <div class="statistic__item">
+                    <div class="statistic__icon">
+                        <img src="img/statistic-icon-1.png" width="85" height="60" alt="">
+                    </div>
+                    <div class="statistic__number">
+                        72
+                    </div>
+                    <div class="statistic__text">
+                        courses are organized
+                    </div>
+                </div>
+                <div class="statistic__item">
+                    <div class="statistic__icon">
+                        <img src="img/statistic-icon-2.png" width="85" height="60" alt="">
+                    </div>
+                    <div class="statistic__number">
+                        934
+                    </div>
+                    <div class="statistic__text">
+                        hours of classes conducted
+                    </div>
+                </div>
+                <div class="statistic__item">
+                    <div class="statistic__icon">
+                        <img src="img/statistic-icon-3.png" width="85" height="60" alt="">
+                    </div>
+                    <div class="statistic__number">
+                        700
+                    </div>
+                    <div class="statistic__text">
+                        students are taught
+                    </div>
+                </div>
+                <div class="statistic__item">
+                    <div class="statistic__icon">
+                        <img src="img/statistic-icon-4.png" width="85" height="60" alt="">
+                    </div>
+                    <div class="statistic__number">
+                        140
+                    </div>
+                    <div class="statistic__text">
+                        course graduates are employed
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="responses">
+        <div class="container">
+            <div class="responses__inner">
+                <div class="responses__title">
+                    What students of our courses say:
+                </div>
+                <div class="responses__slider">
+                    <div class="responses__inner-item">
+                        <div class="responses__inner-content">
+                            <div class="responses__text">
+                                Throughout the Drupal courses at the school, I acquired the skills to develop websites 
+                                of moderate complexity and discovered a profession that truly captivates me. Following 
+                                the successful completion of the courses, I was granted the chance to further my education 
+                                as an Intern Site Builder. Presently, I can affirm that Drupal has had a profound impact, 
+                                completely reshaping my life.
+                            </div>
+                            <div class="responses__author">
+                                David
+                            </div>
+                            <div class="responses__profession">
+                                Drupal developer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responses__inner-item">
+                        <div class="responses__inner-content">
+                            <div class="responses__text">
+                               During the intensive Drupal courses at the school, I not only mastered the art of 
+                               crafting websites with moderate complexity but also unearthed a passion that truly 
+                               engrosses me. With the triumphant completion of the courses, I seized the opportunity 
+                               to advance my education as an Intern Site Builder. I can unequivocally state that Drupal 
+                               has wielded a transformative influence, fundamentally reshaping the trajectory of my life.
+                            </div>
+                            <div class="responses__author">
+                                John
+                            </div>
+                            <div class="responses__profession">
+                                Drupal developer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responses__inner-item">
+                        <div class="responses__inner-content">
+                            <div class="responses__text">
+                                Throughout the Drupal courses at the school, I honed the skills to create websites of 
+                                moderate complexity and unearthed a profession that genuinely enthralls me. Upon 
+                                successfully finishing the courses, I earned the opportunity to advance my education 
+                                as an Intern Site Builder. Currently, I can confidently assert that Drupal has left an 
+                                indelible mark, entirely transforming the course of my life.
+                            </div>
+                            <div class="responses__author">
+                                Mike
+                            </div>
+                            <div class="responses__profession">
+                                Drupal developer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="youtube" class="video">
+        <div class="container">
+            <div class="video__inner">
+                <div class="video__title">
+                    Video
+                </div>
+                <div class="video__text">
+                    <p class="lorem">Lorem Ipsum is placeholder text commonly used in printing and design. In fact, 
+                        Lorem Ipsum has been the standard placeholder text since the 16th century when an unknown printer 
+                        took a font specimen book and scrambled it to create a type specimen. This "fish" not only 
+                        successfully survived five centuries but also adapted well to electronic typesetting, essentially 
+                        remaining unchanged. It gained popularity in the 1960s with the release of Letraset sheets containing 
+                        passages of Lorem Ipsum and, more recently, with desktop publishing software like Aldus Pagemaker, 
+                        which included various versions of Lorem Ipsum.
+                    </p>  
+                </div>
+                <div class="video__content">
+                    <iframe width="1020" height="521" align="absmiddle" src="/app/img/0001-0064.mp4"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mentor" class="mentors">
+        <div class="container">
+            <div class="mentors__inner">
+                <div class="mentors__title">
+                    Our mentors
+                </div>
+                <div class="mentors__slider">
+                    <div class="mentors__slider-item">
+                        <div class="mentors__slider-content">
+                            <div class="mentors__image">
+                                <img src="img/man3.png" width="340" height="360" alt="">
+                            </div>
+                            <div class="mentors__right">
+                                <div class="mentors__name">
+                                    Thomas
+                                </div>
+                                <div class="mentors__text">
+                                    <p>
+                                        Future leaders are in for an enriching experience as they will have the privilege of learning 
+                                        from a seasoned executive with a wealth of expertise! The founder and CEO of the company, 
+                                        Thomas, has expressed his eagerness to serve as an instructor in project management courses.
+                                    </p>
+                                    <p>Thomas brings a wealth of knowledge to share, spanning the domains of establishing and overseeing 
+                                        large enterprises, effective communication, successful project management, and much more. Importantly, 
+                                        he remains humble, acknowledging that continuous self-improvement is an ongoing journey.
+                                    </p>
+                                    <p>Thomas's bookshelf is filled with hundreds of read books on management and related subjects. 
+                                        However, his aspirations aren't mere shelf ornaments; Thomas knows how to confidently progress toward their realization.
+                                    </p>
+                                    <p>Anticipate an unstoppable force, akin to a mountain avalanche, infused with wisdom and experience. 
+                                        Don't miss out on this opportunity! Enroll now!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentors__slider-item">
+                        <div class="mentors__slider-content">
+                            <div class="mentors__image">
+                                <img src="img/man.png" width="340" height="360" alt="">
+                            </div>
+                            <div class="mentors__right">
+                                <div class="mentors__name">
+                                    Joseph
+                                </div>
+                                <div class="mentors__text">
+                                    <p>
+                                        Future leaders are in for an enriching experience as they will have the privilege of learning 
+                                        from a seasoned executive with a wealth of expertise! The founder and CEO of the company, 
+                                        Thomas, has expressed his eagerness to serve as an instructor in project management courses.
+                                    </p>
+                                    <p>Thomas brings a wealth of knowledge to share, spanning the domains of establishing and overseeing 
+                                        large enterprises, effective communication, successful project management, and much more. Importantly, 
+                                        he remains humble, acknowledging that continuous self-improvement is an ongoing journey.
+                                    </p>
+                                    <p>Thomas's bookshelf is filled with hundreds of read books on management and related subjects. 
+                                        However, his aspirations aren't mere shelf ornaments; Thomas knows how to confidently progress toward their realization.
+                                    </p>
+                                    <p>Anticipate an unstoppable force, akin to a mountain avalanche, infused with wisdom and experience. 
+                                        Don't miss out on this opportunity! Enroll now!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentors__slider-item">
+                        <div class="mentors__slider-content">
+                            <div class="mentors__image">
+                                <img src="img/man2.png" width="340" height="360" alt="">
+                            </div>
+                            <div class="mentors__right">
+                                <div class="mentors__name">
+                                    Christopher
+                                </div>
+                                <div class="mentors__text">
+                                    <p>
+                                        Future leaders are in for an enriching experience as they will have the privilege of learning 
+                                        from a seasoned executive with a wealth of expertise! The founder and CEO of the company, 
+                                        Thomas, has expressed his eagerness to serve as an instructor in project management courses.
+                                    </p>
+                                    <p>Thomas brings a wealth of knowledge to share, spanning the domains of establishing and overseeing 
+                                        large enterprises, effective communication, successful project management, and much more. Importantly, 
+                                        he remains humble, acknowledging that continuous self-improvement is an ongoing journey.
+                                    </p>
+                                    <p>Thomas's bookshelf is filled with hundreds of read books on management and related subjects. 
+                                        However, his aspirations aren't mere shelf ornaments; Thomas knows how to confidently progress toward their realization.
+                                    </p>
+                                    <p>Anticipate an unstoppable force, akin to a mountain avalanche, infused with wisdom and experience. 
+                                        Don't miss out on this opportunity! Enroll now!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="map__inner">
+            <div class="map__item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d115629.73098869347!2d30.59327204467457!3d46.45596087583465!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1706810804908!5m2!1sen!2sde" 
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-contacts">
+                    <div class="footer__item">
+                        <div class="footer__item-icon-tel">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="footer__item-title">
+                            Phone
+                        </div>
+                        <div class="footer__item-info">
+                            <a href="#">+49 xxx xxx xx xx</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer__item-title">
+                            E-mail
+                        </div>
+                        <div class="footer__item-info">
+                            test@test.test
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="footer__item-title">
+                            Address
+                        </div>
+                        <div class="footer__item-info">
+                            some street
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="footer__item-title">
+                            Facebook
+                        </div>
+                        <div class="footer__item-info">
+                            <a href="https://www.facebook.com">facebook.com/school</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__copyright">
+        <span>© Copyright 2022-2024 Our Company</span><br>
+        <a href="#">Privacy Policy Terms</a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
