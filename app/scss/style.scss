@@ -38,7 +38,7 @@ body{
 
 
 
-//header
+//Header
 
 .header{
     position: fixed;
@@ -67,11 +67,11 @@ body{
     margin-top: 5px;
 }
 .header__menu-items a{
-     padding: 38px 20px;
-     color: #666666;
+    padding: 38px 20px;
+    color: #666666;
     font-size: 14px;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 .header__menu-items a:hover{
     background-color: #eeeeee;
@@ -102,8 +102,8 @@ body{
 
 
 
-
-  .burger{          //Бургер-меню
+//Burger-menu
+  .burger{          
     width: 20px;
     height: 3px;
     background-color: #fff;
@@ -121,7 +121,7 @@ body{
 
 
 
-// Секція про курси і форма
+// Section: About
 .main{
     min-height: 660px;
     background-color: #f3eeee;
@@ -169,7 +169,7 @@ body{
 
 
 
-//Форма
+//Form
 .main__form{
     display: inline-block;
     color: #666666;
@@ -313,7 +313,7 @@ input#check_f.in_pl{
 
 
 
-//Секція: слайдер про курси
+//Section: Slider
 .course__inner-title{
     display: flex;
     justify-content: center;
@@ -361,7 +361,7 @@ input#check_f.in_pl{
 
 
 
-//Секція: статистика курсів
+//Section: Statistic
 
 .statistic{
     background-color: #3498db;
@@ -394,7 +394,7 @@ input#check_f.in_pl{
 
 
 
-//Секція: слайдер з відгуками про курси
+//Secton: Reviews
 
 .responses{
     height: 530px;
@@ -480,7 +480,7 @@ input#check_f.in_pl{
 
 
 
-// Дотси для слайдерів
+// Dots for slider
 
 ul.slick-dots{
     display: flex;
@@ -529,7 +529,7 @@ button#slick-slide-control12{
 
 
 
-// Секція: відео про курси
+// Section: Video
 
 .video{
     background-color: #f7f7f7;
@@ -588,7 +588,7 @@ button#slick-slide-control12{
 
 
 
-// Секція: ментори курсів(слайдер)
+// Section: Mentors
 .mentors{
     min-height: 620px;
     margin-bottom: -25px;
@@ -649,7 +649,7 @@ button#slick-slide-control12{
 
 
 
-// Секція: мапа(Goole)
+// Section: Map
 
 .map__inner{
     padding-top: 30px;
@@ -663,7 +663,7 @@ button#slick-slide-control12{
 
 
 
-// Футер
+// Footer
 
 .footer{
     min-width: 100%;
@@ -723,25 +723,19 @@ button#slick-slide-control12{
 
 
 
-
-
-
-// Футер: копірайт
-
 .footer__copyright{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 14px;
-    font-weight: 300;
-}
-.footer__copyright span{
-    color: #3498db;
-    line-height: 2.3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
 }
 .footer__copyright a{
+    margin: 0 10px;
     cursor: pointer;
-    color: #666666;
+    color: #4c4b4b;
     line-height: 2.3;
 }
 .footer__copyright a::after{
@@ -754,9 +748,113 @@ button#slick-slide-control12{
     border-bottom: 1px solid transparent;  
 }
 
-.footer__copyright a:hover::after{
-    border-bottom: 1px solid #666666;  
+.footer__copyright a:hover{
+    color: #c4c0c0;
 }
+.footer__copyright_divider{
+    color:#c4c0c0;
+}
+
+
+
+
+
+
+
+//Terms
+
+.terms-body{
+    background-color: #e4e7ea;
+    display: flex;
+    justify-content: center; 
+    line-height: 24px;
+  }
+  .terms-body button{
+      outline: none;
+      border: none;
+      background: none;
+      padding: 0;
+  }
+  .terms-body a{
+    display: block;
+    word-wrap: break-word;
+    max-width: fit-content;
+  }
+  
+  .terms-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      height: 120px;
+  }
+  .terms-box__button-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .terms-box__button a{
+      display: inline-block;
+      padding: 10px 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+  .terms-box__button a:hover{
+      background-color: #0056b3;
+  }
+  .terms-box h1{
+      margin: 0 auto;
+      
+  }
+  
+  
+  
+  .terms-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 40px;
+    color: black;
+  }
+   
+  .terms-container h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 30px 0; 
+    font-weight: bold;
+  }
+  .terms-container h2 {
+    font-size: 1.6rem;
+  }
+  .terms-container h5{
+      margin-bottom: 0;
+      margin-top: 10px;
+  }
+    
+  .terms-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+    
+  .home-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+
 
 
 @import"media";

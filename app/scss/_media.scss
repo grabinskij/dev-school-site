@@ -143,13 +143,9 @@
     .video__text{
         min-height: 360px;
     }
-}
-
-@media(max-width: 768px){
     body.lock{
         overflow: hidden;
     }
-  
     .header__menu-items ul.active{
         display: block;
     }
@@ -163,28 +159,6 @@
     .header__logo img{
         width: 60px;
         height: 60px;
-    }
-    .main__inner{
-        margin-top: 70px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .main__form{
-      display: block;
-    }
-    .main__form p{
-        text-align: center;
-    }
-    .main__inner-item{
-        display: block;
-        text-align: center;
-        margin-top: 35px;
-        padding-top: 0;
-        padding-right: 0;
-    }
-    .main__title{
-        margin-bottom: 20px;
     }
     .header__btn-menu{
         display: block;
@@ -232,6 +206,32 @@
     .header__logo img{
         margin-top: 5px;
     }
+}
+
+@media(max-width: 768px){
+    .main__inner{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main__form{
+      display: block;
+    }
+    .main__form p{
+        text-align: center;
+    }
+    .main__inner-item{
+        display: block;
+        text-align: center;
+        margin-top: 35px;
+        padding-top: 0;
+        padding-right: 0;
+    }
+    .main__title{
+        margin-bottom: 20px;
+    }
+   
     .main__form p{
         padding-left: 0;
     }
@@ -367,6 +367,10 @@
     .footer__item-info{
         font-size: 12px;
     }
+    .terms-box{
+        display: block;
+        margin-bottom: 100px;
+      }
 }
 
 @media(max-width: 730px){
@@ -422,6 +426,28 @@
         min-height: 495px;
     }
 }
+
+
+@media(max-width: 540px){
+    .terms-container {
+        padding: 0 10px 0 20px;
+    }
+    .terms-container h1{
+        text-align:center;
+        font-size: 1.6rem;
+    }
+    .terms-container h2{
+        font-size: 1.4rem;
+    }
+    .terms-container p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .home-button{
+        margin-bottom: 50px;
+    }
+}
+
 
 @media(max-width: 525px){
     .footer__item{
