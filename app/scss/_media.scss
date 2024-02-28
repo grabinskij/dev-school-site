@@ -6,18 +6,12 @@
 }
 
 @media(max-width: 1130px){
-    // .video{
-    //     padding-bottom: 60px;
-    // }
     .video__text{
         min-height: 190px;
     }
 }
 
 @media(max-width: 1020px){
-    // .video{
-    //    padding-bottom: 40px;
-    // }
     .video__content iframe{
         padding: 60px 0 0;
     }
@@ -87,9 +81,6 @@
     .course__text{
     padding: 0 20px 30px;
     }
-    // .video{
-    //     padding-bottom: 60px;
-    // }
 }
 
 @media(max-width: 900px){
@@ -247,7 +238,6 @@
     }
     .statistic__items{
         flex-wrap: wrap;
-        // padding: 0 0 25px;
     }
     .statistic__number{
         font-size: 16px;
@@ -306,9 +296,6 @@
     .responses__text::after{
         bottom: -5px;
     }
-    // .video__inner{
-    //     height: 80%;
-    // }
     .video__content iframe{
         padding: 10px 0 0;
     }
@@ -331,8 +318,6 @@
         margin-top: -10px;
     }
     .mentors__image{
-        // display: inline-block;
-        // width: 56%;
         position: relative;
         display: flex;
         padding-right: 0;
